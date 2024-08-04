@@ -1,0 +1,113 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100ch;
+    margin: 0;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+}
+
+h1
+{
+    padding-bottom: 16px;
+}
+
+.container
+{
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-box
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#cityInput
+{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#searchBtn
+{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0072ff;
+    color: white;
+    cursor: pointer;    
+}
+
+#searchBtn:hover
+{
+    background-color: #005bb5;
+}
+
+#loading
+{
+    display: none;
+}
+
+.weather-info
+{
+    display: none;
+}
+
+.weather-info p
+{
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px; /* Slightly smaller font size */
+    }
+
+    #cityInput, #searchBtn {
+        font-size: 16px; /* Adjust font size for better readability on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size for very small screens */
+    }
+
+    #cityInput, #searchBtn {
+        font-size: 14px; /* Further adjustment for small screens */
+    }
+
+    #cityInput {
+        margin-bottom: 8px; /* Reduce margin for tight spaces */
+    }
+
+    #searchBtn {
+        padding: 8px; /* Smaller padding for space constraints */
+    }
+}
